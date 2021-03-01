@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link rel="stylesheet" href="src/index.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+    <script src="src/naveridlogin_js_sdk_2.0.2.js"></script>
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+</head>
+<body>
+    <header>
+        <div id="header">
+            <a href="index.html">hobby club</a>
+            <ul class="header_menu">
+                <li><a href="About.html">About</a></li>
+                <li><a href="Program.html">Program</a></li>
+                <li><a href="Goods.html">Goods</a></li>
+                <li><a href="Newsletter.html">Newsletter</a></li>
+                <li><a href="Contact_us.html">Contact us</a></li>
+            </ul>
+            <ul class="sign">
+                <li><a href="#">Sign in</a></li>
+                <li><a href="#">Sign up</a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="member_login">
+        <div>
+            <div>
+                <h2>MEMBER LOGIN</h2>
+                <div id="login">
+                    <div>
+                        <input type="text" name="userId" placeholder="아이디를 입력하세요.">
+                        <input type="password" name="pw" placeholder="비밀번호를 입력하세요.">
+                    </div>      
+                    <input type="submit" value="로그인">
+                    <!-- <p>올바른 아이디를 입력해주세요.</p> -->
+                </div>
+                <div>
+                    <input type="checkbox">
+                    <p>아이디 저장</p>
+                </div>
+                <div>
+                    <a href="find_id_pw.html">아이디/비밀번호 찾기</a>
+                    <a href="#">회원가입</a>
+                </div>
+            </div>
+            <div id="sns_login">
+                <h2>SNS LOGIN</h2>
+                <div>
+                    <div id="naverIdLogin"></div>
+                    <!-- //네이버아이디로로그인 버튼 노출 영역 -->
+                    <div>kakao login</div>
+                    <div>facebook login</div>
+                </div>
+            </div>
+        </div>
+    </div>              
+         <!-- 네이버아디디로로그인 초기화 Script -->
+        <script type="text/javascript">
+            var naverLogin = new naver.LoginWithNaverId(
+                {
+                    clientId: "개발자센터에 등록한 ClientID",
+                    callbackUrl: "개발자센터에 등록한 callback Url",
+                    isPopup: false, /* 팝업을 통한 연동처리 여부 */
+                    loginButton: {color: "green", type: 3, height: 45} /* 로그인 버튼의 타입을 지정 */
+                }
+            );
+            
+            /* 설정정보를 초기화하고 연동을 준비 */
+            naverLogin.init();
+        </script>
+</body>
+</html>

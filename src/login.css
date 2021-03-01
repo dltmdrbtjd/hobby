@@ -1,0 +1,227 @@
+
+/* member_login */
+
+#member_login {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#member_login > div > div:first-child {
+    width: 650px;
+    height: 320px;
+    margin-right: 0;
+}
+
+#member_login > div > div:first-child > h2:first-child {
+    font-weight: 800;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+#member_login input {
+    border: 1px solid #B4B4B4;
+}
+
+#login {
+    width: 650px;
+    height: 110px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#login > div {
+    width: 400px;
+    height: 100px;   
+}
+
+#login > div > input {
+    width: 450px;
+    height: 40px;
+    padding-left: 10px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#login > div > input:first-child {
+    margin-bottom: 20px;
+}
+
+#login > input {
+    width: 160px;
+    height: 109px;
+    margin-left: 80px;
+    cursor: pointer;
+    background-color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+}
+/* 아이디를 제대로 입력하지 않을시 나오는 텍스트
+#login > p {
+    margin-top: 10px;
+    color: #ff0000;
+    font-weight: 400;
+    font-size: 14px;
+} */
+
+#member_login > div > div:first-child > div:nth-child(3) {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 20px;
+    margin-top: 30px;
+}
+
+#member_login > div > div:first-child > div:nth-child(3) > p {
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+#member_login > div > div:first-child > div:nth-child(3) > input {
+    width: 20px;
+    height: 20px;
+}
+
+#member_login > div > div:first-child > div:nth-child(4) {
+    margin:0 auto;
+    margin-top: 50px;
+    width: 280px;
+    height: 20px;
+}
+
+#member_login > div > div:first-child > div:nth-child(4) > a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    color:#000;
+}
+
+#member_login > div > div:first-child > div:nth-child(4) > a:first-child {
+    padding-right: 20px;
+    border-right: 1px solid #000;
+}
+
+#member_login > div > div:first-child > div:nth-child(4) > a:last-child {
+    padding-left: 20px;
+}
+
+/* SNS LOGIN */
+#sns_login {
+    width: 650px;
+    margin:0 auto;
+}
+
+#sns_login > h2 {
+    font-weight: 800;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#sns_login > div {
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#sns_login > div > div:nth-child(2) {
+    width: 208px;
+    height: 45px;
+    background-color:yellow;
+}
+
+#sns_login > div > div:nth-child(3) {
+    width: 208px;
+    height: 45px;
+    background-color:#395185;
+    color: #fff;
+}
+
+/* member_login */
+
+/* find_id_pw */
+
+#find_id_pw {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#find_id_pw > div {
+    width: 400px;
+    height: 240px;
+}
+
+#find_id_pw > div > h2 {
+    font-weight: 800;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 33px;
+}
+
+#find_id_pw > div > input:nth-child(2),
+#find_id_pw > div > input:nth-child(3) {
+    width: 400px;
+    height: 40px;
+    border: 1px solid #B4B4B4;
+    padding-left: 10px;
+}
+
+#find_id_pw > div > input:nth-child(3) {
+    margin-top: 20px;
+}
+#find_id_pw > div > input:last-child {
+    display: block;
+    margin:0 auto;
+    margin-top: 30px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: #6C6C6C;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* 이메일 및 이름 제대로 입력하지 않을시 나오는 텍스트
+#find_id_pw > div > p {
+    margin-top: 10px;
+    margin-left: 2px;
+    color: #ff0000;
+    font-weight: 400;
+    font-size: 14px;
+} */
+
+/* find_id_pw */
+
+
+/* find Success */
+
+#find_success {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#find_success  p:nth-child(1),
+#find_success  p:nth-child(2) {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+#find_success  p:last-child {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+/* find Success */
