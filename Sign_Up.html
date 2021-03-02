@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="src/index.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+</head>
+<body>
+    <header>
+        <div id="header">
+            <a href="index.html">hobby club</a>
+            <ul class="header_menu">
+                <li><a href="About.html">About</a></li>
+                <li><a href="Program.html">Program</a></li>
+                <li><a href="Goods.html">Goods</a></li>
+                <li><a href="Newsletter.html">Newsletter</a></li>
+                <li><a href="Contact_us.html">Contact us</a></li>
+            </ul>
+            <ul class="sign">
+                <li><a href="Login.html">Sign in</a></li>
+                <li><a href="#">Sign up</a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="sign_up">
+        <div>
+            <div>
+                <label for="new_userId">아이디</label>
+                <input type="text" id="new_userId" class="input_c" placeholder="아이디">
+                <input type="submit" value="중복확인" class="input_b">
+            </div>
+            <div>
+                <label for="new_userPw">비밀번호</label>
+                <input type="password" id="new_userPw" class="input_c" placeholder="비밀번호 (문자+숫자+특수문자 8자리 이상)">
+            </div>
+            <div>
+                <label for="new_userPw">비밀번호 확인</label>
+                <input type="password" id="new_userPw" class="input_c" placeholder="비밀번호 확인">
+            </div>
+            <div>
+                <label for="new_userName">이름</label>
+                <input type="text" id="new_userName" class="input_c" placeholder="이름">
+            </div>
+            <div>
+                <label for="new_userPhoneNumber">전화번호</label>
+                <input type="number" id="new_userPhoneNumber" placeholder="010">-
+                <input type="number" id="new_userPhoneNumber">-
+                <input type="number" id="new_userPhoneNumber">
+            </div>
+            <div>
+                <label for="new_userEmail">이메일 주소</label>
+                <input type="email" id="new_userEmail" placeholder="이메일 주소">@
+                <select>
+                    <option value="choice">선택</option>
+                    <option value="naver">naver.com</option>
+                    <option value="daum">daum.com</option>
+                    <option value="gmail">gmail.com</option>
+                </select>
+            </div>
+            <div>
+                <label for="new_userAddress">주소</label>
+                <input type="text" id="new_userAddress" class="input_c" placeholder="주소">
+                <input type="text" id="new_userAddress" class="input_c" placeholder="상세주소">
+                <input type="button" value="주소검색" class="input_b">
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>이용약관 및 개인정보수집 및 이용, 쇼핑정보 수신(선택)에 모두 동의합니다.</p>
+            </div>
+            <div>
+                <input type="checkbox">
+                <p>(필수)이용약관 동의</p>
+                <input type="checkbox">
+                <p>(필수)개인정보 수집 및 이용 동의</p>
+                <input type="checkbox">
+                <p>(선택)마케팅 정보 수신 동의</p>
+            </div>
+            <input type="submit" value="회원가입하기">
+        </div>
+    </div>
+</body>
+</html>
