@@ -1,0 +1,265 @@
+@import "reset.css";
+
+html,
+body {
+    height: 100%;
+    font-family: 'NanumSquare', sans-serif;
+}
+
+/* header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 104px;
+    border-bottom: 1px solid #939597;
+    box-shadow: 0 4px 4px #939597;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    z-index: 1;
+}
+
+#header {
+    width: 1380px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header > a {
+    display: block;
+    font-weight:800;
+    color: #0063DC;
+    font-size: 36px;
+    text-decoration: none;
+}
+
+#header > .header_menu {
+    width: 660px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#header > .sign {
+    display: flex;
+    width: 190px;
+    justify-content: right;
+    align-items: center;
+}
+
+#header > .header_menu a,
+#header > .sign a:first-child {
+    font-weight: 800;
+    font-size: 22px;
+    color: #97999B;
+    text-decoration: none;
+}
+
+#header > .header_menu a:hover,
+#header > .sign li:first-child a:hover {
+    color: #0063DC;
+}
+
+#header > .sign li:first-child a {
+    margin-right: 20px;
+}
+
+#header > .sign li:last-child a {
+    color: #0063DC;
+}
+
+#header > .sign > li:nth-child(2) > .myPage {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/avatar.png) no-repeat;
+    background-size: cover;
+}
+
+/* header */
+
+
+/* sign input Commons */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+#sign_up input {
+    border: 1px solid #B4B4B4;
+}
+
+#sign_up label {
+    width: 82px;
+    height: 14px;
+    display: block;
+}
+
+.input_c {
+    width: 400px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+.input_b {
+    width: 88px;
+    height: 40px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#sign_up > div > div {
+    display: flex;
+    align-items: center;
+    width: 650px;
+    margin-top: 30px;
+}
+
+#sign_up h3 {
+    width: 82px;
+    display: block;
+    text-align: right;
+    margin-right: 20px;
+}
+/* sign input Commons */
+
+/* Sign_up */
+#sign_up {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+}
+/* Sign_up*/
+.sign_userid {
+    flex-wrap: wrap;
+}
+
+.sign_userid > input:nth-child(3) {
+    margin-left: 10px;
+}
+
+.sign_userid > span {
+    margin-left: 106px;
+    margin-top: 10px;
+    color: #ff0000;
+}
+
+#sign_up > div > .sign_userPw2 {
+    margin-top: 6px;
+    flex-wrap: wrap;
+}
+
+#sign_up > div > .sign_userPw2 > span {
+    margin-left: 106px;
+    margin-top: 10px;
+    color: #ff0000;
+}
+
+.sign_userPhoneNumber input {
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    margin-right: 10px;
+}
+.sign_userPhoneNumber input:nth-child(3),
+.sign_userPhoneNumber input:nth-child(4) {
+    margin-left: 10px;
+}
+
+.sign_userEmail input,
+.sign_userEmail select {
+    width: 180px;
+    height: 40px;
+}
+
+.sign_userEmail input {
+    margin-right: 10px;
+    padding-left: 10px;
+}
+
+.sign_userEmail select {
+    margin-left: 10px;
+}
+
+.sign_userAddress {
+    flex-wrap: wrap;
+}
+
+.sign_userAddress > input:nth-child(3) {
+    margin-left: 10px;
+}
+
+.sign_userAddress > input:nth-child(4) {
+    margin-left: 102px;
+    margin-top: 10px;
+}
+
+.sign_userAgree {
+    justify-content: center;
+}
+
+.sign_userAgree p {
+    margin-left: 6px;
+    font-weight: 800;
+}
+
+#sign_up > div > .sign_userAgree2 {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+}
+
+#sign_up > div > .sign_userAgree2 > div {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 6px;
+}
+
+#sign_up > div > .sign_userAgree2 > div:first-child {
+    margin-top: 20px;
+}
+
+#sign_up > div > .sign_userAgree2 > div > p {
+    font-weight: 700;
+    color: #0063DC;
+    margin-left: 6px;
+}
+
+.sign_up_btn {
+    display: block;
+    margin:0 auto;
+    margin-top: 30px;
+    width: 200px;
+    height: 40px;
+    background-color: #6C6C6C;
+    border-radius: 4px;
+    color:#fff;
+    cursor: pointer;
+}
+
+#Sign_Up_Success {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#Sign_Up_Success  p:nth-child(1) {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+#Sign_Up_Success  p:last-child {
+    font-weight: 400;
+    font-size: 24px;
+}

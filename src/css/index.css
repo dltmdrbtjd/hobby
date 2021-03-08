@@ -1,6 +1,4 @@
 @import "reset.css";
-@import "login.css";
-@import "sign_up.css";
 
 /* COMMONS */
 
@@ -14,6 +12,9 @@ input:focus {
     outline-color: #0063DC;
 }
 
+.active {
+    opacity: 1;
+}
 
 /* header */
 
@@ -92,67 +93,116 @@ header {
 
 /* container */
 
-/* topWrap */
-
-#topWrap {
-    height: 1080px;
-    background-image: url(./images/main.jpg);
-    background-size: cover;
-    position: relative;
-    top: 0;
-    left: 0;
-    z-index: 0;
-}
-
-#topWrap > div {
+/* slider */
+.slider > div:last-child {
     width: 1380px;
-    margin: 0 auto;
-    position: relative;
-    top: 0;
-    left: 0;
-}
-
-#topWrap > div > div {
-    width: 400px;
     position: absolute;
     top: 540px;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%);
 }
 
-#topWrap strong {
+.slider > div:last-child strong {
     color: #ffffff;
     font-weight: 700;
     font-size: 60px;
+    display: block;
 }
 
-#topWrap > div > div > strong:nth-child(2) {
+.slider > div:last-child strong:last-child {
     margin-left: 70px;
 }
 
-#topWrap > div > .slide_btn {
-    display:flex;
-    justify-content: space-between;
+.slider {
+    width: 100%;
+    height: 1080px;
+    overflow:hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 1080px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 1s;
+}
+
+.slide img {
+    width: 100%;
+}
+
+.navigation-manual {
     position: absolute;
-    top: 994px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 160px;
-    height: 30px;
+    width: 100%;
+    display: flex;
+    margin-top: -100px;
+    justify-content: center;
 }
 
-#topWrap > div > .slide_btn > li {
-    width: 25px;
-    height: 25px;
-    background-color: white;
-    border-radius: 25px;
-    opacity: .5;
+.manual-btn {
+    border: 1px solid #fff;
+    padding: 15px;
+    border-radius: 30px;
     cursor: pointer;
+    transition: .5s;
 }
 
-#topWrap > div > .slide_btn > li:first-child {
-    opacity: 1;
+.manual-btn:not(:last-child){
+    margin-right: 40px;
 }
 
-/* topWrap */
+.manual-btn:hover {
+    background-color: #fff;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+
+.navigation-auto {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    margin-top: 980px;
+    justify-content: center;
+}
+
+.navigation-auto div {
+    border: 1px solid #fff;
+    padding: 15px;
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background: #fff;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background: #fff;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background: #fff;
+}
+
+/* slider */
 
 /* main_section01 */
 
@@ -195,7 +245,7 @@ header {
     margin:0 auto;
     width: 80px;
     height: 80px;
-    background: url(images/right_arrow.png) no-repeat;
+    background: url(../images/right_arrow.png) no-repeat;
     background-size: contain;
     text-indent: -9999px;
 }
@@ -233,7 +283,7 @@ header {
 #main_section02 > div > div > div {
     height: 380px;
     width: 380px;
-    background: url(images/main_snowboard.jpg) no-repeat;
+    background: url(../images/main_snowboard.jpg) no-repeat;
     background-size: cover;
     position: relative;
     top: 0;
@@ -260,13 +310,13 @@ header {
     position: absolute;
     bottom: 6px;
     right: 6px;
-    background: url(images/heart.png) no-repeat;
+    background: url(../images/heart.png) no-repeat;
     background-size: contain;
     cursor: pointer;
 }
 
 .favorite:hover {
-    background: url(images/heart_click.png) no-repeat;
+    background: url(../images/heart_click.png) no-repeat;
     background-size: contain;
 }
 
@@ -321,7 +371,7 @@ header {
 #main_section03 > div > div > div {
     height: 380px;
     width: 380px;
-    background: url(images/main_snowboard.jpg) no-repeat;
+    background: url(../images/main_snowboard.jpg) no-repeat;
     background-size: cover;
     position: relative;
     top: 0;
