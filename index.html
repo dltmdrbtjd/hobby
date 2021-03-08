@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hobbyClub</title>
-    <link rel="stylesheet" href="./src/index.css">
+    <link rel="stylesheet" href="./src/css/index.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
 </head>
 <body>
     <header>
-        <div id="header">
+        <div id="header" style="margin-left: 20px;">
             <a href="index.html">hobby club</a>
             <ul class="header_menu">
                 <li><a href="About.html">About</a></li>
@@ -21,23 +21,47 @@
             </ul>
             <ul class="sign">
                 <li><a href="Login.html">Sign in</a></li>
-                <li><a href="#">Sign up</a></li>
+                <li><a href="Sign_Up.html">Sign up</a></li>
             </ul>
         </div>
     </header>
     <div id="container">
-        <div id="topWrap">
-            <div>
-                <div>
-                    <strong>Be hobby,</strong>
-                    <strong>Be happy</strong>
+        <div class="slider">
+            <div class="slides">
+                <!-- 버튼 시작-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <!-- 버튼 끝 -->
+                <!--슬라이드 이미지 시작-->
+                <div class="slide first">
+                    <img src="/src/images/main1.jpg" alt="picture">
                 </div>
-                <ul class="slide_btn">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                <div class="slide">
+                    <img src="/src/images/main2.jpg" alt="piano">
+                </div>
+                <div class="slide">
+                    <img src="/src/images/main3.jpg" alt="book">
+                </div>
+                <!-- 슬라이드 이미지 끝 -->
+                <!-- 자동 내비게이션 시작-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+                <!-- 자동 내비게이션 끝-->
+            </div>
+            <!-- 매뉴얼 네비게이션 시작 -->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+            <!-- 매뉴얼 네비게이션 끝 -->
+            <div>
+                <strong>Be hobby,</strong>
+                <strong>Be happy</strong>
             </div>
         </div>
         <section id="main_section01">
@@ -146,6 +170,6 @@
             </div>
         </footer>
     </div>
-    <script src="src/index.js"></script>
+    <script src="src/js/index.js"></script>
 </body>
 </html>
