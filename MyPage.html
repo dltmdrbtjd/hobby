@@ -25,5 +25,97 @@
         </ul>
     </div>
 </header>
+<div class="user-info">
+    <div>
+        <h2><a href="MyPage.html">가입 정보</a></h2>
+        <h2><a href="MyProgram.html">내 프로그램 관리</a></h2>
+    </div>
+    <form id="fm" name="fm">
+        <input type="hidden" name="token_help" id="token_help">
+        <input type="hidden" name="isEmail" id="isEmail">
+        <input type="hidden" name="isPw" id="isPw">
+        <input type="hidden" name="isPhone" id="isPhone">
+        <input type="hidden" name="isAddress" id="isAddress">       
+        <table class="myPage-tb1">
+            <tbody>
+                <tr>
+                    <th>
+                        <div>이름</div>
+                    </th>
+                    <td>
+                        <div>이다정</div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <div>아이디</div>
+                    </th>
+                    <td>
+                        <div>jenny2020</div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <div>비밀번호</div>
+                    </th>
+                    <td>
+                        <button>변경하기</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <div>휴대전화</div>
+                    </th>
+                    <td>
+                        <p>010-5604-9791</p>
+                        <button>변경하기</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <div>이메일</div>
+                    </th>
+                    <td>
+                        <p>jenny@danal.co.kr</p>
+                        <button>변경하기</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <div>주소</div>
+                    </th>
+                    <td>
+                        <p>서초구 강남대로 419 220동 1006호</p>
+                        <button>변경하기</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <div>동의 약관 내용 확인</div>
+                    </th>
+                    <td>
+                        <p>이용약관 보기 ></p>
+                        <p>개인정보 수집 및 이용 약관 보기 ></p>
+                        <p>마케팅 정보 수신 동의 ></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <input type="button" value="탈퇴하기 >" class="delete_id">
+        <input type="button" value="변경내용 저장" class="info-save">
+        <div id="info-save-btn">
+            <div>
+                <p>변경 내용을</p>
+                <p>저장하시겠습니까?</p>
+
+            </div>
+            <div>
+                <span class="info-save-yes info">확인</span>
+                <span class="info-save-no info">취소</span>
+            </div>
+        </div>
+    </form>
+</div>
+<script src="src/js/MyPage.js"></script>
 </body>
 </html>

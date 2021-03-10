@@ -82,3 +82,174 @@ header {
 }
 
 /* header */
+
+/* user-info */
+
+.user-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.user-info > div:first-child {
+    width: 140px;
+    height: 620px;
+    text-align: right;
+}
+
+.user-info > div:first-child a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+    color:#000;
+}
+
+.user-info > div:first-child > h2:first-child > a {
+    color:#0063DC;
+    margin-bottom: 40px;
+    display: block;
+}
+
+#fm {
+    width: 560px;
+    height: 620px;
+    border: 1px solid #000;
+    margin-left: 50px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+tbody {
+    margin: 0 auto;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+tbody tr {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+tbody tr:first-child {
+    margin-top: 60px;
+}
+
+tbody tr:last-child {
+    align-items:flex-start;
+}
+
+tbody tr th {
+    display: inline-block;
+    text-align: right;
+    margin-right: 20px;
+    margin-left: 30px;
+    width: 130px;
+}
+
+tbody tr td,
+tbody tr td button {
+    display: flex;
+    align-items: center;
+}
+tbody > tr:nth-child(3) > td > button {
+    margin-left: 0;
+}
+
+tbody tr td button {
+    display: block;
+    width: 100px;
+    height: 30px;
+    margin-left: 10px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #B4B4B4;
+    cursor: pointer;
+}
+
+tbody tr:last-child td {
+    display: block;
+}
+
+.delete_id {
+    border: none;
+    background-color: #fff;
+    display: block;
+    font-weight: 800;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-left: 430px;
+    cursor: pointer;
+}
+
+.info-save {
+    display: block;
+    margin: 0 auto;
+    background-color: #fff;
+    display: block;
+    font-weight: 700;
+    margin-top: 20px;
+    width: 230px;
+    height: 40px;
+    border: 1px solid #B4B4B4;
+    cursor: pointer;
+}
+
+tbody > tr:last-child > td p {
+    color:#0063DC;
+    font-weight: 700;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+tbody > tr:last-child > td p:last-child {
+    margin-bottom: 0;
+}
+
+#info-save-btn {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 180px;
+    height: 90px;
+    border: 1px solid #B4B4B4;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    display: none;
+}
+
+#info-save-btn > div:first-child {
+    width: 180px;
+    height: 60px;
+    padding-top: 15px;
+}
+
+#info-save-btn p {
+    text-align: center;
+}
+
+#info-save-btn > div:last-child {
+    display: flex;
+    width: 180px;
+    height: 30px;
+    border-top: 1px solid #B4B4B4;
+}
+
+#info-save-btn > div:last-child span {
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    background-color: #B4B4B4;
+    cursor: pointer;
+}
+
+#info-save-btn > div:last-child > span:first-child {
+    border-right: 1px solid #fff;
+}
