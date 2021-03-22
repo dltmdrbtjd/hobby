@@ -1,0 +1,357 @@
+@import "reset.css";
+
+html,
+body {
+    height: 100%;
+    font-family: 'NanumSquare', sans-serif;
+}
+
+/* header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 104px;
+    border-bottom: 1px solid #939597;
+    box-shadow: 0 4px 4px #939597;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    z-index: 1;
+}
+
+#header {
+    width: 1380px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header > a {
+    display: block;
+    font-weight:800;
+    color: #0063DC;
+    font-size: 36px;
+    text-decoration: none;
+}
+
+#header > .header_menu {
+    width: 660px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#header > .sign {
+    display: flex;
+    width: 190px;
+    justify-content: right;
+    align-items: center;
+}
+
+#header > .header_menu a,
+#header > .sign a:first-child {
+    font-weight: 800;
+    font-size: 22px;
+    color: #97999B;
+    text-decoration: none;
+}
+
+#header > .header_menu a:hover,
+#header > .sign li:first-child a:hover {
+    color: #0063DC;
+}
+
+#header > .sign li:first-child a {
+    margin-right: 20px;
+}
+
+#header > .sign li:last-child a {
+    color: #0063DC;
+}
+
+#header > .sign > li:nth-child(2) > .myPage {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/avatar.png) no-repeat;
+    background-size: cover;
+}
+
+/* header */
+
+/* user-info */
+
+.user-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.user-info-btn {
+    width: 140px;
+    height: 620px;
+    text-align: right;
+}
+
+.user-info-btn a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+    color:#000;
+}
+
+.user-info-btn > h2:last-child > a {
+    color:#0063DC;
+    margin-top: 40px;
+    display: block;
+}
+
+#fm {
+    width: 560px;
+    height: 620px;
+    border: 1px solid #000;
+    margin-left: 50px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+tbody {
+    margin: 0 auto;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+tbody tr {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+tbody tr:first-child {
+    margin-top: 60px;
+}
+
+tbody tr:last-child {
+    align-items:flex-start;
+}
+
+tbody tr th {
+    display: inline-block;
+    text-align: right;
+    margin-right: 20px;
+    margin-left: 30px;
+    width: 130px;
+}
+
+tbody tr td,
+tbody tr td button {
+    display: flex;
+    align-items: center;
+}
+tbody > tr:nth-child(3) > td > button {
+    margin-left: 0;
+}
+
+tbody tr td button {
+    display: block;
+    width: 100px;
+    height: 30px;
+    margin-left: 10px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #B4B4B4;
+    cursor: pointer;
+}
+
+tbody tr:last-child td {
+    display: block;
+}
+
+.delete_id {
+    border: none;
+    background-color: #fff;
+    display: block;
+    font-weight: 800;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-left: 430px;
+    cursor: pointer;
+}
+
+.info-save {
+    display: block;
+    margin: 0 auto;
+    background-color: #fff;
+    display: block;
+    font-weight: 700;
+    margin-top: 20px;
+    width: 230px;
+    height: 40px;
+    border: 1px solid #B4B4B4;
+    cursor: pointer;
+}
+
+tbody > tr:last-child > td p {
+    color:#0063DC;
+    font-weight: 700;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+tbody > tr:last-child > td p:last-child {
+    margin-bottom: 0;
+}
+
+#info-save-btn {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 180px;
+    height: 90px;
+    border: 1px solid #B4B4B4;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    display: none;
+}
+
+#info-save-btn > div:first-child {
+    width: 180px;
+    height: 60px;
+    padding-top: 15px;
+}
+
+#info-save-btn p {
+    text-align: center;
+}
+
+#info-save-btn > div:last-child {
+    display: flex;
+    width: 180px;
+    height: 30px;
+    border-top: 1px solid #B4B4B4;
+}
+
+#info-save-btn > div:last-child span {
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    background-color: #B4B4B4;
+    cursor: pointer;
+}
+
+#info-save-btn > div:last-child > span:first-child {
+    border-right: 1px solid #fff;
+}
+
+.user-program {
+    width: 700px;
+    height: 680px;
+    margin-left: 50px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.user-program > h2 {
+    width: 600px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.user-program > div {
+    width: 600px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.user-program > div > h3 {
+    width: 180px;
+}
+
+.user-program > div > div:nth-child(3) {
+    width: 100px;
+}
+
+.user-program > div > span {
+    width: 100px;
+    height: 50px;
+    display: block;
+    border: 1px solid #B4B4B4;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.user-program > div > span:nth-child(4){
+    margin-right: 4px;
+    margin-left: 10px;
+}
+
+.user-program > div > div:nth-child(3) > p:last-child {
+    color:#0063DC;
+    margin-top: 6px;
+}
+
+.user-program > div:nth-child(5),
+.user-program > div:nth-child(6) {
+    background-color: #939597;
+}
+
+.user-program > div:nth-child(5) > div:nth-child(3) > p:last-child ,
+.user-program > div:nth-child(6) > div:nth-child(3) > p:last-child {
+    color: #ff0000;
+}
+
+.user-program > .program-list {
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+
+.user-program > .program-list span {
+    width: 60px;
+    height: 30px;
+    border: 1px solid #b4b4b4;
+}
+
+.user-program > .program-list span:hover {
+    background-color: #B4B4B4;
+}
+
+.user-program > .program-list > ul {
+    display: flex;
+    width: 70px;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+.user-program > .program-list > ul li:first-child {
+    color: #0063DC;
+}
+
+.user-program > .program-list > ul li {
+    cursor: pointer;
+}
