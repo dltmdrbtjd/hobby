@@ -1,0 +1,505 @@
+@import "reset.css";
+
+/* COMMONS */
+
+html,
+body {
+    height: 100%;
+    font-family: 'NanumSquare', sans-serif;
+}
+
+input:focus {
+    outline-color: #0063DC;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* COMMONS */
+
+/* HEADER */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 104px;
+    border-bottom: 1px solid #939597;
+    box-shadow: 0 4px 4px #939597;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    z-index: 1;
+}
+
+#header {
+    width: 1380px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header > a {
+    display: block;
+    font-weight:800;
+    color: #0063DC;
+    font-size: 36px;
+    text-decoration: none;
+}
+
+#header > .header_menu {
+    width: 660px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#header > .sign {
+    display: flex;
+    width: 190px;
+}
+
+#header > .header_menu a,
+#header > .sign a {
+    font-weight: 800;
+    font-size: 22px;
+    color: #97999B;
+    text-decoration: none;
+}
+
+#header > .header_menu a:hover,
+#header > .sign li:first-child a:hover {
+    color: #0063DC;
+}
+
+#header > .sign li:first-child a {
+    margin-right: 20px;
+}
+
+#header > .sign li:last-child a {
+    color: #0063DC;
+}
+
+#header > .header_menu > li:nth-child(3) a {
+    color: #0063DC;
+}
+
+/* HEADER */
+
+/* Goods-items*/
+
+.goods-item1,
+.goods-item2 {
+    width: 1380px;
+    height: 374px;
+    margin: 0 auto;
+    margin-top: 240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.goods-item2 {
+    margin-top: 60px;
+}
+
+.goods-item1 > div,
+.goods-item2 > div {
+    width: 308px;
+    height: 374px;
+}
+
+.goods-item1 > div > span,
+.goods-item2 > div > span {
+    display: block;
+    width: 308px;
+    height: 308px;
+    background: url(../images/554.jpg) no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.goods-item1 > div > p,
+.goods-item2 > div > p {
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+}
+
+.goods-item1 > div > p:nth-child(2),
+.goods-item2 > div > p:nth-child(2) {
+    margin-top: 15px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #0063DC;
+}
+
+.goods-item1 > div > p:nth-child(3),
+.goods-item2 > div > p:nth-child(3) {
+    margin-top: 6px;
+}
+
+.goods-item2 > div:nth-child(4) > span::after {
+    content: "품절상태";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 308px;
+    height: 308px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+}
+
+/* Goods-items*/
+
+/* Goods-buy it*/
+
+.Goods-buy {
+    margin-top: 240px;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+}
+
+.Goods-buy > span {
+    display: block;
+    margin:0 auto;
+    width: 308px;
+    height: 308px;
+    background: url(../images/554.jpg) no-repeat;
+    background-size: cover;
+}
+
+.Goods-buy > p:nth-child(2) {
+    display: block;
+    border-bottom: 1px solid #0063DC;
+    width: 308px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding-bottom: 10px;
+}
+
+.Goods-buy > input {
+    width: 400px;
+    height: 50px;
+    border: 1px solid #0063DC;
+    background-color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 35px;
+    cursor: pointer;
+}
+
+.Goods-buy > a {
+    display: flex;
+    width: 400px;
+    height: 50px;
+    border: 1px solid #0063DC;
+    margin:0 auto;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #000;
+    justify-content: center;
+    align-items: center;
+}
+
+.Goods-buy > a > span {
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: url(../images/share.png) no-repeat;
+    background-size: cover;
+    margin-left: 6px;
+}
+
+.Goods-buy > div {
+    width: 800px;
+    border-top: 1px solid #b4b4b4;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.Goods-buy > div > div {
+    width: 570px;
+    height: 300px;
+    border: 1px solid #b4b4b4;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/* Goods-buy it*/
+
+/* Goods-OrderSheet */
+
+.OrderSheet_wrap {
+    width: 1150px;
+    margin: 0 auto;
+    margin-top: 180px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.OrderSheet_wrap > h2 {
+    margin-bottom: 7px;
+}
+
+.OrderSheet_wrap > table:nth-child(2) {
+    display: block;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    width: 1150px;
+}
+
+.OrderSheet_wrap > table:nth-child(2) > thead > tr th {
+    width: 180px;
+}
+
+.OrderSheet_wrap > table:nth-child(2) > thead > tr > th:first-child {
+    width: 100px;
+}
+
+.OrderSheet_wrap > table:nth-child(2) > thead > tr{
+    width: 1150px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 16px;
+}
+
+.OrderSheet_wrap > table:nth-child(2) > tbody > tr {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1150px;
+}
+
+.OrderSheet_wrap > table:nth-child(2) > tbody > tr td {
+    width: 180px;
+}
+
+.OrderSheet_wrap > table:nth-child(2) > tbody > tr td p {
+    text-align: center;
+}
+
+.OrderSheet_wrap > table:nth-child(2) > tbody > tr > td:first-child {
+    width: 100px;
+    height: 100px;
+    background: url(../images/554.jpg) no-repeat;
+    background-size: cover;
+    display: block;
+}
+
+.OrderSheet_wrap > table:nth-child(2) > tbody > tr:nth-child(2) {
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.OrderSheet_wrap > p:nth-child(3) {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    text-align: right;
+    font-weight: 700;
+    border-bottom: 1px solid #000;
+}
+
+.OrderSheet_wrap > div:nth-child(4) {
+    display: flex;
+    width: 1150px;
+    padding-top: 44px;
+    font-weight: 700;
+}
+
+.OrderSheet_wrap > div:nth-child(4) div {
+    width: 50%;
+}
+
+.OrderSheet_wrap > div:nth-child(4) div h3,
+.OrderSheet_wrap > div:nth-child(4) div div {
+    margin-bottom: 32px;
+    display: flex;
+    width: 500px;
+    align-items: center;
+}
+
+.OrderSheet_wrap > div:nth-child(4) div div input {
+    text-align: center;
+    height: 22px;
+    border: 1px solid #b4b4b4;
+}
+
+.OrderSheet_wrap > div:nth-child(4) div div label {
+    width: 100px;
+}
+
+.Order-user-info1 > div:nth-child(2) > input,
+.Order-user-info2 > div:nth-child(2) > input {
+    width: 100px;
+    height: 22px;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+}
+
+.Order-user-info1 > div:nth-child(3) > input,
+.Order-user-info2 > div > input {
+    width: 200px;
+}
+
+.Order-user-info1 > div:nth-child(4) > input {
+    width: 130px;
+}
+
+.Order-user-info1 > div:nth-child(4) > input:nth-child(2) {
+    margin-right: 10px;
+}
+
+.Order-user-info1 > div:nth-child(4) > input:nth-child(3) {
+    margin-left: 10px;
+}
+
+.Order-user-info2 > div:nth-child(3) > input:last-child {
+    width: 70px;
+    margin-left: 10px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.Order-user-info2 > div:nth-child(5) > textarea {
+    border: 1px solid #b4b4b4;
+}
+
+.Order-user-info2 > div:nth-child(5) > textarea:focus {
+    outline-color: #0063DC;
+}
+
+.OrderSheet_wrap > div:last-child > input {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 400px;
+    height: 60px;
+    background-color: #fff;
+    border: 1px solid #0063DC;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Goods-OrderSheet */
+
+/* Goods payment success*/
+
+.Goods-buy-success {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+.Goods-buy-success > div > h2 {
+    font-weight: 800;
+    font-size: 48px;
+}
+
+.Goods-buy-success > div> div {
+    width: 500px;
+    height: 330px;
+    background: url(../images/667.png) no-repeat;
+    background-size: cover;
+    margin-top: 60px;
+    margin-bottom: 60px;
+} 
+
+.Goods-buy-success > div > p {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.Goods-buy-success > div > p:nth-child(3) {
+    margin-bottom: 20px;
+}
+
+.Goods-buy-success > div > p:nth-child(4) > a {
+    color:#0063DC;
+    text-decoration: none;
+}
+
+/* Goods payment success*/
+
+/* FOOTER */
+footer {
+    width: 100%;
+    height: 360px;
+    border-top: 1px solid #939597;
+    box-shadow: 0 -4px 4px #939597;
+    margin-top: 200px;
+    padding: 90px 0;
+}
+
+footer > div {
+    width: 1380px;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin:0 auto;
+}
+
+footer > div > a {
+    font-weight: 700;
+    font-size: 36px;
+    color:#0063DC;
+    text-decoration: none;
+}
+
+footer p {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+footer > div > p:nth-child(2) {
+    position: absolute;
+    top: 74px;
+    left: 0;
+}
+
+footer > div > p:nth-child(3) {
+    position: absolute;
+    top: 140px;
+    left: 0;
+}
+
+footer > div > p:nth-child(5) {
+    position: absolute;
+    top: 140px;
+    right: 0;
+}
+
+footer > div > ul {
+    display: flex;
+    justify-content: space-between;
+    width: 810px;
+    position: absolute;
+    top: 10px;
+    right: 120px;
+}
+
+footer > div > ul li a {
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    color: #939597;
+}
+
+footer > div > ul li a:hover {
+    color:#0063DC;
+}
+/* FOOTER */
