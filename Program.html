@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hobby_Program</title>
-    <link rel="stylesheet" href="src/css/index.css">
+    <link rel="stylesheet" href="src/css/Program.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
 </head>
 <body>
@@ -25,6 +25,134 @@
             </ul>
         </div>
     </header>
-    
+    <div class="Program_wrap">
+        <div class="Program_header">
+            <div>
+                <h2>진행중인 프로그램</h2>
+                <span>|</span>
+                <h2>지난<br/>프로그램</h2>
+            </div>
+            <div>
+                <select name="option_list" id="option_select">
+                    <option value="" selected>필터</option>
+                    <option value="date">날짜</option>
+                    <option value="status">모집상태</option>
+                    <option value="Contents">내용</option>
+                </select>
+                <input type="text" class="textarea">
+                <div class="option_date">
+                    <div>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <span>~</span>
+                    <div>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="option_status">
+                    <select name="option_status" id="option_status_list">
+                        <option value="현재 모집중">현재 모집중</option>
+                        <option value="모집마감(대기신청가능)">모집마감(대기신청가능)</option>
+                        <option value="모집마감">모집마감</option>
+                    </select>
+                </div>
+                <input type="button" value="검색">
+            </div>
+        </div>
+        <div class="Program_list">
+            <div>
+                <span></span>
+                <div>
+                    <p>winter season</p>
+                    <p>피겨 스케이팅</p>
+                </div>
+                <p>피겨 스케이팅 혼자타지 말고 함께해요!</p>
+                <div>
+                    <p>활동기간</p>
+                    <p>2020.11.08 ~ 2021.03.01</p>
+                </div>
+                <a href="Program_Success">현재 모집중 1/10</a>
+            </div>
+            <div>
+                <span></span>
+                <div>
+                    <p>winter season</p>
+                    <p>스키</p>
+                </div>
+                <p>스키 혼자타지 말고 함께해요!</p>
+                <div>
+                    <p>활동기간</p>
+                    <p>2020.11.08 ~ 2021.03.01</p>
+                </div>
+                <a href="Program_Success">현재 모집중 7/10</a>
+            </div>
+            <div>
+                <span></span>
+                <div>
+                    <p>winter season</p>
+                    <p>피겨 스케이팅</p>
+                </div>
+                <p>피겨 스케이팅 혼자타지 말고 함께해요!</p>
+                <div>
+                    <p>활동기간</p>
+                    <p>2020.11.08 ~ 2021.03.01</p>
+                </div>
+                <a href="Program_Success">모집 마감 (대기 신청 가능)</a>
+            </div>
+            <div>
+                <span></span>
+                <div>
+                    <p>winter season</p>
+                    <p>스키</p>
+                </div>
+                <p>스키 혼자타지 말고 함께해요!</p>
+                <div>
+                    <p>활동기간</p>
+                    <p>2020.11.08 ~ 2021.03.01</p>
+                </div>
+                <a href="Program_Success">모집 마감</a>
+            </div>
+            <div>
+                <span></span>
+                <div>
+                    <p>winter season</p>
+                    <p>스키</p>
+                </div>
+                <p>스키 혼자타지 말고 함께해요!</p>
+                <div>
+                    <p>활동기간</p>
+                    <p>2020.11.08 ~ 2021.03.01</p>
+                </div>
+                <a href="Program_Success">모집 마감</a>
+            </div>
+        </div>
+        <ul>
+            <li>처음</li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>다음</li>
+            <li>마지막</li>
+        </ul>
+    </div>
+    <footer>
+        <div>
+            <a href="index.html">hobby club</a>
+            <p>(주)호비클럽<br/>서울특별시 종로구 세종로 청와대로1</p>
+            <p>사업자등록번호. 123-45-67890<br/>통신판매업신고. 2021-가나다라-6000</p>
+            <ul>
+                <li><a href="#">서비스 이용약관</a></li>
+                <li><a href="#">환불 정책</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">사업자 정보 확인</a></li>
+                <li><a href="#">문의/제휴</a></li>
+            </ul>
+            <p>주식회사 호비클럽은 전자상거래 등에서의 소비자보호에 관한 법류에 따른 통신판매업과 통신판매중개업을 영위하고 잇습니다.<br/>
+                주식회사 호비클럽은 통신판매중개자로서 중개하는 통신판매에 관하여서는 통신판매의 당사자가 아니므로 어떠한 책임도 부담하지 아니합니다.</p>
+        </div>
+    </footer>
 </body>
 </html>
